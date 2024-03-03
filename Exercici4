@@ -1,0 +1,13 @@
+<?php
+//Fes un array associatiu que representi informació de tu mateix/a. 
+//En concret ha d’incloure:
+$persona = array(
+    "nom" => "Laura", 
+    "edat" => "28", 
+    "email" => "amax@gmail.com", 
+    "menjar preferit" => "bibimbap");
+print_r($persona);
+foreach  ($persona as $personas =>  $valor) {
+    echo "mi " . $persona . "es " . $valor;
+}
+?>
