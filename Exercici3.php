@@ -5,29 +5,10 @@ Per exemple:
 Si tenim [“hola”, “Php”, “Html”] retornarà true si preguntem per “h” però fals si preguntem per “l”.*/
 
 <?php
-
-
-function todasContienenCaracter($arrayDePalabras, $caracter) {
-    // recorremos la array
-    for ($i = 0; $i < count($arrayDePalabras); $i++) {
-        // Verificamos si la palabra no contiene el carácter
-        if (strpos($arrayDePalabras[$i], $caracter) === false) {
-            // Si encontramos una palabra que no contiene el carácter, retornamos falso
-            return false;
-        }
-    }
-    // Si todas las palabras contienen el carácter, retornamos "true".
-    return true;
-}
-
-// Ejemplo de uso
-$arrayDePalabras = ["hola", "Php", "Html"];
+$paraules = [“hola”, “Php”, “Html”]; /*Iniciamos el array*/
 $caracter = "h";
 
-// Llamamos a la función y mostramos el resultado
-if (todasContienenCaracter($arrayDePalabras, $caracter)) {
-    echo "Todas las palabras contienen el carácter '$caracter'.";
-} else {
-    echo "No todas las palabras contienen el carácter '$caracter'.";
+foreach($paraules as $paraula){
+    echo $paraula;
 }
 ?>
