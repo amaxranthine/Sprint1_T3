@@ -15,8 +15,8 @@ $caracter = "h";
 foreach($paraules as $paraula){
     echo $paraula;
 }
-echo "Lletra a buscar: $caracter" . "</br>";
-echo "</br>";
+//echo "Lletra a buscar: $caracter" . "</br>";
+//echo "</br>";
 
 /** Llamar a la funcion busqueda. Los mensajes correspondientes */
 $resultat = busqueda ($caracter , $paraules);
@@ -25,13 +25,13 @@ if($resultat == true){
 } else{
     $resposta = "No s'ha trobat la lletra $caracter";
 } 
-echo $resposta;  /**Imprimir el mensajito */
+echo $resposta;  /**Imprimir el mensaje */
 
-/**en la funcion busqueda toda analizar cada palabra del array y usamos un for each */
+/**en la funcion busqueda recibe el array y el caracter*/
 function busqueda ($caracter, $paraules){
-    foreach($paraules as $paraula){
+    foreach($paraules as $paraula){                // usar el foreach para iterar por la array
     
-        if(strpos($paraula, $caracter) !== false){
+        if(strpos($paraula, $caracter) !== false){      //usamos strpos para verificar si 'h' esta en la palabra
             return true;
         }
     }
