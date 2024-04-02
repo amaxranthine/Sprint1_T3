@@ -1,7 +1,7 @@
 <?php
 
 // Definimos el array de palabras y el carácter a buscar
-$paraules = ["ola", "Pp", "Html"];
+$paraules = ["hola", "Php", "Html"];
 $caracter = "h";
 
 // Definimos la función de búsqueda
